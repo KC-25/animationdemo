@@ -1,0 +1,68 @@
+
+body{
+    background-color: blueviolet;
+}
+
+div{
+    background-color: cyan; 
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+   animation: move 10s infinite;
+}
+h1{
+    text-align: center;
+    animation: spin 10s infinite; 
+}
+
+@keyframes move{
+   0%{left: 0px;
+top:0px;
+   }
+   10%{
+    left: 100px;
+    top:500px;
+   }
+   20%{
+    left:200px;
+    top:50px;
+   }
+   30%{
+    left: 300px;
+    top:500px;
+   }
+   40%{
+    left:400px;
+    top:100px;
+   }
+   50%{
+    left: 500px;
+    top:500px;
+   }
+   60%{
+    left:600px;
+    top:150px;
+   }
+   70%{
+    left:700px;
+    top:500px;
+   }
+    80%{
+        left:800px;
+        top: 200px;
+    }
+    90%{
+    left:900px;
+    top:500px;
+    }
+   100%{
+    left:100px;
+    top:250px;
+   }
+}
+
+@keyframes spin{
+    from{transform: rotateY(0deg);}
+    to{transform: rotateY(360deg);}
+}
